@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale:">
+        <title>Tables</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="main">
+
+    <div class="navigation">
+        <h3>Library System</h3>
+    <div class="link">
+        <a href="#book">Book</a>
+        <a href="#register">Register</a>
+        <a href="#contactus">Contact Us</a>
+        <a href="logout">Logout</a>
+    </div>
+    </div>
+
+        <Selection class="list" id="book">
+       <table border="5px" cellspacing="0">
+        <h1>Books</h1>
+        <thead>
+            <tr>
+                <th>Books ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+           </tr>
+        </thead>
+        <tbody>
+
+           <tr>
+                <td>1</td>
+                <td style="padding:0.2rem;">
+                    <a href="#">Adventures of Sherlock Holmes</a>
+                    <table border="1" cellspacing="0">
+                        <tr><td>Publication Date: 2000</td></tr>
+                        <tr><td>Page Count: 250</td></tr>
+                        <tr><td>ISBN: 123-4567890123</td></tr>
+                    </table>
+                </td>
+                <td>Sir Arthur Conan Doyle</td>
+                <td>Gener 1</td>
+                <td>Available</td>
+           </tr>
+
+           <tr>
+                <td>2</td>
+                <td style="padding:0.2rem;">
+                    <a href="#">Ain-i-Akbari</a>
+                    <table border="1" cellspacing="0">
+                        <tr><td>Publication Date: 2005</td></tr>
+                        <tr><td>Page Count: 300</td></tr>
+                        <tr><td>ISBN: 123-4567890456</td></tr>
+                    </table>
+                </td>
+                <td>Abul Fazal</td>
+                <td>Gener 2</td>
+                <td>Not Available</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td style="padding:0.2rem;">
+                    <a href="#">Alchemist, The</a>
+                    <table border="1" cellspacing="0">
+                        <tr><td>Publication Date: 2010</td></tr>
+                        <tr><td>Page Count: 350</td></tr>
+                        <tr><td>ISBN: 123-4567890789</td></tr>
+                    </table>
+                </td>
+                <td>Sir Arthur Conan Doyle</td>
+                <td>Gener 3</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td style="padding:0.2rem;">
+                    <a href="#">Alice in the Wonderland</a>
+                    <table border="1" cellspacing="0">
+                        <tr><td>Publication Date: 2015</td></tr>
+                        <tr><td>Page Count: 400</td></tr>
+                        <tr><td>ISBN: 123-4567891123</td></tr>
+                    </table>
+                </td>
+                <td>Lewis Carroll</td>
+                <td>Gener 4</td>
+                <td>Not Available</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td style="padding:0.2rem;">
+                    <a href="#">All’s Well that Ends well</a>
+                    <table border="1" cellspacing="0">
+                        <tr><td>Publication Date: 2020</td></tr>
+                        <tr><td>Page Count: 450</td></tr>
+                        <tr><td>ISBN: 123-4567891456</td></tr>
+                    </table>
+                </td>
+                <td>William Shakespeare</td>
+                <td>Gener 5</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+        </table>
+        </Selection>
+
+            <form action="#" method="POST" id="Register">
+                <h1>Register</h1>
+                    <br>
+                    <label for="fname">First Name:</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" required>
+                    <br>
+                    <label for="lname">Last Name:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" required>
+                    <br>
+                    <label for="dob">Date Of Birth:</label>
+                    <br>
+                    <input type="date" id="dob" name="dob" required>
+                    <br>
+                    <label for="age">Age:</label>
+                    <br>
+                    <input type="number" id="age" name="age" min="5" max="100" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="password" name="password" id='password1' required>
+                    <br>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <br>
+                    <input type="password" name="confirm_password" id="password2" required>
+                    <br>
+                    <button type="submit">Register</button>
+            </form>
+    </body>
+</html>
