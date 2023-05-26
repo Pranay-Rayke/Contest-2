@@ -1,112 +1,129 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&family=Wix+Madefor+Display&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif ;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.main{
-    width: 100%;
-    
+/* smooth scrolling */
+html{
+  scroll-behavior: smooth;
 }
 
-.navigation{
-   height:2rem; 
-   position: sticky;
-   top: 0;
-   background-color: black;
-   color: white;
-   display: flex;
-   justify-content: space-between;
-   padding: 0.5rem;
-   
+.navbar{
+  color: #ffff;
+  background: #000;
+  font-size: 12px;
+  position: sticky;
+  top: 0px;
+  height: 50px;
 }
 
-.link{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 1rem;
-}
-.navigation  .link a{
-    text-decoration: none;
-    color: white;
-    margin-right: 1rem;
-    
-}
-.navigation  .link a:hover {
-    color: blueviolet;
-}
-table, th, td {
-    border:1px solid black;
-    width: 90%;
-    height: 70%;
-    margin: auto;
-    border-collapse: collapse;
-    font-size: 15px;
-    text-align: center;
-    background-color: darkorange;
-  }
-  table th:first-child,
-  table td:first-child {
-    width: 10%;
-    
-  }
-  table th:nth-child(2),
-  table td:nth-child(2) {
-    width: 40%;
-  }
-  table th:nth-child(3),
-  table td:nth-child(3) {
-    width: 30%;
-  }
-table td{
-    width: 100px;
-   }
-.list{
-    width: 60%;
-    height: 80vh;
-    margin: auto;
-    background: white;
-    box-shadow: 1px 4px 5px 4px rgba(0,0,0,0.3);
-    margin-top:1.5rem ;
-    box-sizing: content-box;
-    padding: 1rem;
-    display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   background-color: darkorange;
-
+.title p{
+float: left;
+margin: 15px 20px;
 }
 
-input{
-  
-    height: 5%;
-    border-radius: 0.5rem;
+.nav-items{
+  float: right;
+  margin: 15px 20px;
 }
 
-button{
-    background: black;
-    color: white;
-    text-align: center;
-    height: 2rem;
+.nav-items a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0px 10px;
 }
 
-form{
-    width: 60%;
-    height: 80vh;
-    margin: auto;
-    background: white;
-    box-shadow: 1px 4px 5px 4px rgba(0,0,0,0.3);
-    margin-top:3rem ;
-    box-sizing: content-box;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: orangered;
-}
-
-body{
+.container{
   background-color: blueviolet;
+  padding: 10px 30px;
+}
+
+.books-table, .registration-form{
+  background-color: darkorange;
+  margin: 30px 20%;
+  padding: 30px;
+  border-radius: 5px;
+}
+.main-table{
+  text-align: center;
+}
+.books-table:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.col{
+  text-align: center;
+}
+
+.books-table h1{
+  padding: 10px 0px;
+}
+
+.books-table table{
+  width: 100%;
+}
+
+.books-table th.col{
+  text-align: left;
+}
+
+.books-table table, tr, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+.ns-table{
+  margin: 10px 0px;
+}
+
+.registration-form .form-control{
+  margin: 10px 0px;
+}
+
+.form-control label{
+  font-size: 12px;
+}
+
+.form-control input{
+  width: 100%;
+  height: 25px;
+  border: 1px solid #ddd;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.form-control input:focus{
+  background-color: rgb(218, 237, 243);
+}
+
+#submit-btn{
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  width: 102%;
+}
+
+#submit-btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.top-btn{
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.top-btn img{
+  width: 15px;
+  margin: 9px;
 }
